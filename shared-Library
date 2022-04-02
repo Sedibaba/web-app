@@ -9,18 +9,25 @@ def call(String stageName){
   if ("${stageName}" == "Build")
      {
        sh "mvn clean package"
+       sh "build succesful"
      }
   else if ("${stageName}" == "SonarQube Report")
      {
        sh "echo Running Code Quality Report analysis"
        sh "mvn clean sonar:sonar"
+       sh "code quality analsis succesful"
      }
   else if ("${stageName}" == "Upload Into Nexus")
      {
        sh "mvn clean deploy"
+       sh "deployment to nexus succesful"
      }
-}
-
+  else if ("${stageName}" == "Upload Into Tomcat")
+     {
+       sh "mvn clean deploy"
+       sh "deployment to tomcat succesful"
+     }  
+     }
 Jenkinsfile
 //@Library('LibraryName') _ 
 // Declarative pipeline
