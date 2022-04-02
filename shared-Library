@@ -15,7 +15,7 @@ def call(String stageName){
      {
        sh "echo Running Code Quality Report analysis"
        sh "mvn clean sonar:sonar"
-       sh "code quality analsis succesful"
+       sh "code quality analysis succesful"
      }
   else if ("${stageName}" == "Upload Into Nexus")
      {
