@@ -61,6 +61,11 @@ stage("Upload Artifacts Into Nexus"){
     common("Upload Into Nexus")
 }
 }
+stage("Upload Artifacts Into Tomcat"){ 
+  steps{
+    common("Upload Into Tomcat")
+}    
+}
 //=========================
 }// Stages Close
 } // Pipeline Close
