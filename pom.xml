@@ -97,7 +97,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url> http://172.31.93.124:8081/repository/Accessbank-Releases/</url>
+	      <url> http://100.27.21.131:8081/repository/Accessbank-Releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
